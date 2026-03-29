@@ -1,0 +1,44 @@
+{
+  "name": "The Future of AI Is Dead",
+  "short_name": "AI Is Dead",
+  "description": "Exposing the Myth, the Hype, and the Buzzwords. A practical guide for CEOs, managers, and business owners.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#6d28d9",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["books", "education", "business"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Read Book",
+      "short_name": "Read",
+      "description": "Open the book reader",
+      "url": "/read",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Get the Book",
+      "short_name": "Buy",
+      "description": "Purchase access",
+      "url": "/checkout",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
