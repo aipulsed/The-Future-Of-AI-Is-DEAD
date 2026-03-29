@@ -46,7 +46,7 @@
 
 **The Future of AI Is Dead** is a *complete, self-contained digital product business* built as a Next.js 16 web application. It ships with:
 
-- A 10-chapter ebook exposing AI hype and teaching a practical "Hybrid Intelligence" framework for CEOs and operators.
+- A 30-chapter ebook exposing AI hype and teaching a practical "Hybrid Intelligence" framework for CEOs and operators.
 - An interactive in-browser flipbook reader (free preview for the first two chapters).
 - A high-converting multi-stage sales funnel — from free lead magnet through four paid upsells.
 - An exit-intent down-sale popup that saves abandoning visitors.
