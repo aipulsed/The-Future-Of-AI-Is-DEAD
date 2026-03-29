@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import SignupForm from '@/components/SignupForm';
+import ExitIntentDownsale from '@/components/ExitIntentDownsale';
 import { CheckCircle, Star } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function FunnelPage() {
   return (
     <div className="min-h-screen" style={{ background: 'var(--background)' }}>
+      <ExitIntentDownsale context="funnel" />
       <div className="max-w-3xl mx-auto px-4 py-16">
         {/* Free lead capture */}
         <section className="mb-16">

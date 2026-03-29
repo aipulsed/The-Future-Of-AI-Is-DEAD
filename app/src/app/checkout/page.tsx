@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Shield, CreditCard } from 'lucide-react';
+import ExitIntentDownsale from '@/components/ExitIntentDownsale';
 
 export default function CheckoutPage() {
   const [email, setEmail] = useState('');
@@ -33,6 +34,7 @@ export default function CheckoutPage() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 py-16" style={{ background: 'var(--background)' }}>
+      <ExitIntentDownsale context="checkout" />
       <div className="w-full max-w-md">
         <h1 className="text-3xl font-extrabold text-center mb-2" style={{ color: 'var(--foreground)' }}>Secure Checkout</h1>
         <p className="text-center text-sm mb-8" style={{ color: 'var(--text-muted)' }}>You&apos;re one step away from the full book.</p>

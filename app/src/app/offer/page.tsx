@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CheckCircle, Star, ArrowRight } from 'lucide-react';
+import ExitIntentDownsale from '@/components/ExitIntentDownsale';
 
 export const metadata: Metadata = {
   title: 'Get Full Access — The Future of AI Is Dead',
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function OfferPage() {
   return (
     <div className="min-h-screen" style={{ background: 'var(--background)' }}>
+      <ExitIntentDownsale context="offer" />
       <div className="max-w-3xl mx-auto px-4 py-16">
         {/* Hero */}
         <div className="text-center mb-12">
