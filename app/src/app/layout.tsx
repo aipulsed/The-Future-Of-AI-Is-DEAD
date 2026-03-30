@@ -64,7 +64,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col">
         <Header />
-        <main className="flex-1 flex flex-col" style={{ paddingTop: '70px' }}>
+        <main className="flex-1 flex flex-col" style={{ paddingTop: '56px' }}>
           {children}
         </main>
         <Footer />
