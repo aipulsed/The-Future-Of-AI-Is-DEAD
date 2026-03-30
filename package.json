@@ -1,0 +1,19 @@
+{
+  "name": "the-future-of-ai-is-dead",
+  "private": true,
+  "workspaces": [
+    "app"
+  ],
+  "scripts": {
+    "predev": "npm run install:app",
+    "dev": "npm run dev --workspace app",
+    "build": "npm run build --workspace app",
+    "start": "npm run start --workspace app",
+    "lint": "npm run lint --workspace app",
+    "dev:app": "npm --prefix app run dev",
+    "install:app": "npm --prefix app install"
+  },
+  "dependencies": {
+    "co": "^4.6.0"
+  }
+}
