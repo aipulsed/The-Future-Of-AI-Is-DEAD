@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import PWARegister from "@/components/PWARegister";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const viewport: Viewport = {
   themeColor: "#6d28d9",
@@ -61,7 +63,11 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
       </head>
       <body className="min-h-full flex flex-col">
-        {children}
+        <Header />
+        <main className="flex-1 flex flex-col" style={{ paddingTop: '70px' }}>
+          {children}
+        </main>
+        <Footer />
         <PWARegister />
       </body>
     </html>

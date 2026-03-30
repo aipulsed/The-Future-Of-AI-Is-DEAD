@@ -5,25 +5,8 @@ import SignupForm from '@/components/SignupForm';
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen" style={{ background: 'var(--background)' }}>
-      {/* NAV */}
-      <nav
-        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4"
-        style={{ background: 'rgba(10,10,15,0.9)', backdropFilter: 'blur(12px)', borderBottom: '1px solid var(--border)' }}
-      >
-        <Link href="/" className="font-bold text-lg gradient-text">AiAscended</Link>
-        <div className="hidden md:flex items-center gap-6 text-sm" style={{ color: 'var(--text-muted)' }}>
-          <Link href="/read" className="hover:text-white transition-colors">Read Free</Link>
-          <Link href="/affiliate" className="hover:text-white transition-colors">Affiliates</Link>
-          <Link href="/dashboard" className="hover:text-white transition-colors">Dashboard</Link>
-        </div>
-        <div className="flex items-center gap-3">
-          <Link href="/read" className="btn-outline text-sm py-2 px-4">Read Free</Link>
-          <Link href="/funnel" className="btn-gold text-sm py-2 px-4">Get $9.99 Access</Link>
-        </div>
-      </nav>
-
       {/* HERO */}
-      <section className="hero-bg relative flex flex-col items-center justify-center text-center px-4 pt-32 pb-24 overflow-hidden">
+      <section className="hero-bg relative flex flex-col items-center justify-center text-center px-4 pt-16 pb-24 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" style={{
           background: 'radial-gradient(ellipse at 50% 0%, rgba(124,58,237,0.25) 0%, transparent 70%)'
         }} />
@@ -258,43 +241,6 @@ export default function HomePage() {
           <SignupForm source="landing" headline="Get the First Chapters FREE" subtext="Before you spend $9.99 — read it yourself. See the truth. Enter your email for instant access." buttonText="Send Me Free Access →" redirectTo="/read" />
         </div>
       </section>
-
-      {/* FOOTER */}
-      <footer className="px-6 py-10" style={{ borderTop: '1px solid var(--border)', background: 'var(--surface)' }}>
-        <div className="max-w-5xl mx-auto">
-          <div className="flex flex-wrap justify-between items-start gap-8 mb-8">
-            <div>
-              <div className="font-bold text-lg gradient-text mb-2">AiAscended Technologies</div>
-              <p className="text-sm max-w-xs" style={{ color: 'var(--text-muted)' }}>Building hybrid AI systems that actually work. No hype. No buzzwords.</p>
-            </div>
-            <div className="flex gap-12 text-sm">
-              <div className="flex flex-col gap-2">
-                <span className="font-semibold mb-1" style={{ color: 'var(--foreground)' }}>Book</span>
-                <Link href="/read" style={{ color: 'var(--text-muted)' }} className="hover:text-white">Read Free</Link>
-                <Link href="/funnel" style={{ color: 'var(--text-muted)' }} className="hover:text-white">Get Full Access</Link>
-                <Link href="/affiliate" style={{ color: 'var(--text-muted)' }} className="hover:text-white">Affiliate Program</Link>
-                <Link href="/dashboard" style={{ color: 'var(--text-muted)' }} className="hover:text-white">Dashboard</Link>
-              </div>
-              <div className="flex flex-col gap-2">
-                <span className="font-semibold mb-1" style={{ color: 'var(--foreground)' }}>Legal</span>
-                <Link href="/terms" style={{ color: 'var(--text-muted)' }} className="hover:text-white">Terms</Link>
-                <Link href="/privacy" style={{ color: 'var(--text-muted)' }} className="hover:text-white">Privacy Policy</Link>
-                <Link href="/license/ebook-mrr" style={{ color: 'var(--text-muted)' }} className="hover:text-white">Ebook License</Link>
-                <Link href="/license/software-mrr" style={{ color: 'var(--text-muted)' }} className="hover:text-white">Software License</Link>
-              </div>
-            </div>
-          </div>
-          <div className="section-divider mb-6" />
-          <div className="flex flex-wrap justify-between items-center gap-4 text-xs" style={{ color: 'var(--text-muted)' }}>
-            <span>© 2026 AiAscended Technologies / AscendStack Systems. All rights reserved.</span>
-            <div className="flex gap-4">
-              <Link href="/terms" className="hover:text-white transition-colors">Terms of Sale</Link>
-              <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>
-              <Link href="/affiliate" className="hover:text-white transition-colors">Affiliate Program</Link>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
